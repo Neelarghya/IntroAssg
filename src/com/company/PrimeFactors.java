@@ -7,16 +7,29 @@ public class PrimeFactors {
 
     }
 
-    private ArrayList<Integer> generate(int n){
+    public ArrayList<Integer> generate(int n){
         ArrayList<Integer> primeFactors = new ArrayList<Integer>();
-        for (int i = 2 ; i <= Math.ceil(Math.sqrt(n)) ; i++){
-            if (generate(i).size() == 1 && n % i == 0){
-                primeFactors.add(i);
+
+        if (n % 2 == 0){
+            primeFactors.add(2);
+        }
+
+        while(n % 2 == 0){
+            n /= 2;
+        }
+
+        for (int i = 3 ; i < Math.sqrt(n) ; i += 2){
+            while (n % i == 0){
+                n /= i;
+                if (!primeFactors.contains(i)){
+                    primeFactors.add(i);
+                }
             }
         }
 
+        if (n > 2)
+            primeFactors.add(n);
+
         return primeFactors;
     }
-
-
 }
