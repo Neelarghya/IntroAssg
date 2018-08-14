@@ -10,6 +10,6 @@ public class Main {
         PrimeFactors primeFactors = new PrimeFactors();
         System.out.println("Enter n: ");
         int n = in .nextInt();
-        primeFactors.generate(n);
+        System.out.println(primeFactors.generate(n));
     }
 }
