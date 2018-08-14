@@ -8,32 +8,27 @@ public class Triangle {
         this.n = n;
     }
 
-    public void printAstrix(){
+    private void printAstrix(){
         System.out.println("*");
     }
 
-    public void printLine(int n){
+    private void printHorizontalLine(int n){
         for (int i = 1; i <= n; i++) {
             System.out.print("*");
         }
         System.out.println();
     }
 
-    public void printTriangle(int n){
+    private void printVerticalLine(int n){
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print("*");
-            }
-            System.out.println();
+            System.out.println("*");
         }
+        System.out.println();
     }
 
-    public void printIsoscelesTriangle(int n){
+    private void printRightTriangle(int n){
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n-i; j++) {
-                System.out.print(" ");
-            }
-            for (int k = 1; k < i*2; k++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println();
