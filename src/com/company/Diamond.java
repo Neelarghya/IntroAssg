@@ -36,9 +36,8 @@ public class Diamond {
         for (int i = 1; i > 0 && i <= n; i += ((flag == 0)? 1 : -1)) {
             if (i == n){
                 flag = 1;
-                System.out.println("Neelarghya");
+                System.out.print("Neelarghya");
             } else {
-
                 for (int j = 1; j <= n - i; j++) {
                     System.out.print(" ");
                 }

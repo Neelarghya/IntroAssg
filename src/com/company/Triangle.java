@@ -16,7 +16,6 @@ public class Triangle {
         for (int i = 1; i <= n; i++) {
             System.out.println("*");
         }
-        System.out.println();
     }
 
     public void printRightTriangle(int n){

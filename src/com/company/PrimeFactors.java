@@ -32,4 +32,8 @@ public class PrimeFactors {
 
         return primeFactors;
     }
+
+    public void printPrimeFactors(int n){
+        System.out.println(generate(n));
+    }
 }

@@ -19,7 +19,7 @@ public class AccessExercise {
         Scanner in = new Scanner(System.in);
         int choice;
         do {
-            System.out.println("Enter the exercise you would like to view:\n1 for Triangle\n2 for Diamond\n3 for FizzBuzz\n4 for Prime Factors\n0 to Exit");
+            System.out.println("\nEnter the exercise you would like to view:\n1 for Triangle\n2 for Diamond\n3 for FizzBuzz\n4 for Prime Factors\n0 to Exit");
             choice = in.nextInt();
             int n;
             switch(choice){
@@ -62,7 +62,7 @@ public class AccessExercise {
                 case 4:
                     System.out.println("Enter the number whose Prime factors you want to generate: ");
                     n = in.nextInt();
-                    primeFactors.generate(n);
+                    primeFactors.printPrimeFactors(n);
                     break;
 
                 case 0:
