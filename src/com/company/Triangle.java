@@ -1,7 +1,7 @@
 package com.company;
 
 public class Triangle {
-    public void printAstrix(int n){
+    public void printAstrix(){
         System.out.println("*");
     }
 
