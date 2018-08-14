@@ -39,8 +39,40 @@ public class AccessExercise {
                     n = in.nextInt();
                     triangle.printRightTriangle(n);
                     break;
+
+                case 2:
+                    System.out.println("\nIsosceles Triangle:\nEnter n: ");
+                    n = in.nextInt();
+                    diamond.printIsoscelesTriangle(n);
+
+                    System.out.println("\nDiamond:\nEnter n: ");
+                    n = in.nextInt();
+                    diamond.printDiamond(n);
+
+                    System.out.println("\nDiamond with Name:\nEnter n: ");
+                    n = in.nextInt();
+                    diamond.printDiamondWithName(n);
+                    break;
+
+                case 3:
+                    System.out.println("\nFizz Buzz Exercise:\n");
+                    fizzBuzz.runFizzBuzz();
+                    break;
+
+                case 4:
+                    System.out.println("Enter the number whose Prime factors you want to generate: ");
+                    n = in.nextInt();
+                    primeFactors.generate(n);
+                    break;
+
+                case 0:
+                    System.out.println("Bye...");
+                    break;
+
+                default:
+                    System.out.println("Invalid Choice! Please try again");
+                    break;
             }
         }while(choice != 0);
     }
-
 }
