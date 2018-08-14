@@ -8,7 +8,7 @@ public class Diamond {
         this.n = n;
     }
 
-    private void printIsoscelesTriangle(int n){
+    public void printIsoscelesTriangle(int n){
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n-i; j++) {
                 System.out.print(" ");
@@ -20,7 +20,7 @@ public class Diamond {
         }
     }
 
-    private void printDiamond(){
+    public void printDiamond(){
         int flag = 0;
         for (int i = 1; i > 0 && i <= n; i += ((flag == 0)? 1 : -1)) {
             if (i == n){
@@ -37,7 +37,7 @@ public class Diamond {
         }
     }
 
-    private void printDiamondWithName(){
+    public void printDiamondWithName(){
         int flag = 0;
         for (int i = 1; i > 0 && i <= n; i += ((flag == 0)? 1 : -1)) {
             if (i == n){
