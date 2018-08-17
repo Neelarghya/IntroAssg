@@ -1,8 +1,8 @@
 package com.company;
 
 public class FizzBuzz {
-    public void runFizzBuzz() {
-        for (int i = 1; i <= 100; i++) {
+    public void runFizzBuzz(int n) {
+        for (int i = 1; i <= n; i++) {
             if (i % 3 == 0) {
                 System.out.print("Fizz");
             }
