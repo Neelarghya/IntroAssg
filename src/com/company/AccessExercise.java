@@ -15,14 +15,14 @@ public class AccessExercise {
         primeFactors = new PrimeFactors();
     }
 
-    public void chooseExercise(){
+    public void chooseExercise() {
         Scanner in = new Scanner(System.in);
         int choice;
         do {
             System.out.println("\nEnter the exercise you would like to view:\n1 for Triangle\n2 for Diamond\n3 for FizzBuzz\n4 for Prime Factors\n0 to Exit");
             choice = in.nextInt();
             int n;
-            switch(choice){
+            switch (choice) {
                 case 1:
                     System.out.println("Astrix:");
                     triangle.printAstrix();
@@ -73,6 +73,6 @@ public class AccessExercise {
                     System.out.println("Invalid Choice! Please try again");
                     break;
             }
-        }while(choice != 0);
+        } while (choice != 0);
     }
 }
