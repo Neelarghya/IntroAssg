@@ -3,10 +3,6 @@ package com.company;
 import java.util.ArrayList;
 
 public class PrimeFactors {
-    public PrimeFactors() {
-
-    }
-
     public ArrayList<Integer> generate(int n){
         ArrayList<Integer> primeFactors = new ArrayList<Integer>();
 
