@@ -55,8 +55,9 @@ public class AccessExercise {
                     break;
 
                 case 3:
-                    System.out.println("\nFizz Buzz Exercise:\n");
-                    fizzBuzz.runFizzBuzz();
+                    System.out.println("\nFizz Buzz Exercise:\nEnter n:");
+                    n = in.nextInt();
+                    fizzBuzz.runFizzBuzz(n);
                     break;
 
                 case 4:
